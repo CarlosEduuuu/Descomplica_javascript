@@ -1,0 +1,34 @@
+!<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario 2</title>
+</head>
+
+<body>
+    <form action="" name="formcadastro" onsubmit="validarFormulario()">
+        <label for="">Email</label>
+        <input type="email" name="" id="email">
+
+        <label for="">Nome</label>
+        <input type="text" id="nome" >
+        <button type="submit" > Cadastrar</button>
+    </form>
+</body>
+<script>
+   
+   function validarFormulario(){
+var nomePessoa = document.forms["formCadastro"]["nome"].value;
+if(nomePessoa == " "){
+    alert("Favor inserir o seu nome");
+    event.preventDefault();//trvar na mesm página
+}
+else{
+    alert("Olá,  " + nomePessoa);
+    event.preventDefault();
+}
+   }
+</script>
+</html>

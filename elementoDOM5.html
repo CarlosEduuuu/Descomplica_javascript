@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento dom 5</title>
+</head>
+<body>
+
+<ul id="lista">
+<li>Produtos</li>
+</ul>
+    
+</body>
+<script>
+    //criando uma div no body
+    var elementoDiv = document.createElement("div");
+    elementoDiv.innerText = "incluindo texto na div";
+    elementoDiv.style.backgroundColor = "green";
+   document.body.append(elementoDiv);
+
+   //criar um li e colocar dentro da ul
+   var lista = document.getElementById("lista");
+   var li = document.createElement("li");
+   li.textContent = "Quem somos";
+   lista.appendChild(li);
+
+
+</script>
+</html>

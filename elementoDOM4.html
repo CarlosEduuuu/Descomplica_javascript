@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Elemento DOM 4</h1>
+
+    <ul>
+        <li>Java</li>
+        <li>Javascript</li>
+        <li>Node JS</li>
+    </ul>
+    <div id="div">
+
+    </div>
+    <div name="conteudo">
+
+    </div>
+    <div class="conteudo">
+        
+        
+    </div>
+    <span class="novoSpanClass" id="novoSpanId">
+        ldvnhsjkldhgvlsdhvglksdgvskldavgbsdajvpsjda
+                </span>
+        
+</body>
+<script>
+elemento0 = document.getElementsByTagName("li")[0];
+elemento0.style.color = "blue";
+elemento1 = document.getElementsByTagName("li")[1];
+elemento1.style.background = "red";
+elemento2 = document.getElementsByTagName("li")[2];
+elemento2 = document.getElementsByTagName("li")[2];
+elemento2.innerText = "Springboot";
+
+
+elementoDiv = document.getElementById("div");
+elementoDiv.innerHTML = "<h1> estou inserindo uma tag  h1 dentro da div </h1>" ;
+
+elementDivName = document.getElementsByName("conteudo")[0];
+elementDivName.innerHTML ="<p> estou inserindo uma tag  p dentro da div usando tag name </p>" ;
+
+elementoDivClass = document.getElementsByClassName( "conteudo")[0];
+elementoDivClass.innerHTML = "inserindo uatrvés de um getElementsByClassName";
+
+elementoSpanClass = document.querySelector(".novoSpanClass");
+elementoSpanClass.style.color = "green";
+
+elementoSpanId = document.querySelector("#novoSpanId");
+elementoSpanId.innerHTML = "<h3>novoSpanId <h/3>"
+
+
+</script>
+
+</html>
